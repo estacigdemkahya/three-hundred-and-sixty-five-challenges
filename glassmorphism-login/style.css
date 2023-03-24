@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #212121;
+    color: #b39ad8;
+}
+.ring{
+    width: 430px;
+    height: 520px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.ring .shape{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #ad1879,
+        rgba(98, 108, 183, 0.879)
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #664f88,
+        #f098
+    );
+    right: -30px;
+    bottom: -80px;
+}
+
+form {
+    font-family: sans-serif;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    letter-spacing: 0.5px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    outline: none;
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    border: none;
+}
+
+form h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+}
+
+label {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    font-weight: 300;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    background-color: #a28d9b;
+    border-radius: 50px;
+}
+
+button {
+    cursor: pointer;
+    margin-top: 50px;
+    width: 50%;
+    margin-left: 80px;
+    background-color: #a28d9b;
+    color: #212121;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.social div {
+    text-align: center;    
+    width: 150px;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.1);
+    color: #e5e5e5;
+}
+
+.social {
+    display: flex;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.social div:hover {
+    background-color: #212121;
+    color: #a28d9b;
+}
+
