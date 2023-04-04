@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+	font-family: Raleway, sans-serif;
+}
+body {
+	background: linear-gradient(
+        90deg, 
+        #363636, 
+        #FE6244
+    );		
+}
+.container {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	min-height: 100vh;
+}
+.screen {		
+	position: relative;
+    background: linear-gradient(
+        90deg,
+        #FE6244, 
+        #FC2947
+    );		
+	height: 500px;
+	width: 350px;	
+	box-shadow: 0 0 25px #363636;
+}
+.screen__content {
+	position: relative;
+    height: 100%;
+    z-index: 1;
+}
+.screen__background {		
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	clip-path: inset(0 0 0 0);	
+}
+.screen__background__shape {
+    position: absolute;
+    transform: rotate(45deg);
+
+}
+.screen__background__shape1 {
+	background: #363636;
+    height: 520px;
+	width: 520px;		
+	top: -50px;
+	right: 120px;	
+	border-radius: 0 72px 0 0;
+}
+.screen__background__shape2 {
+	background: #363636;
+    width: 220px;
+    height: 220px;
+	top: -172px;
+	right: 0;	
+	border-radius: 32px;
+}
+.screen__background__shape3 {
+	height: 540px;
+	width: 190px;
+	background: linear-gradient(
+        270deg, 
+        #FE6244, 
+        #363636
+    );
+	top: -24px;
+	right: 0;	
+	border-radius: 32px;
+}
+.screen__background__shape4 {
+	width: 200px;
+    height: 400px;
+	background: linear-gradient(
+		270deg,
+		#FC2947,
+		#FE6244
+	);	
+	top: 420px;
+	right: 50px;	
+	border-radius: 60px;
+}
+.login {
+	width: 320px;
+	padding: 30px;
+	padding-top: 156px;
+}
+.login__field {
+	position: relative;
+    padding: 20px 0;	
+}
+.login__input {
+	background: none;
+    border: none;
+	border-bottom: 2px solid #FC2947;
+	width: 75%;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	transition: .5s;
+}
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+	outline: none;
+	border-bottom-color: #FC2947;
+}
+.login__submit {
+	display: flex;
+    width: 100%;
+    background: #363636;
+	color: #FC2947;
+    font-size: 15px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #FC2947;
+	text-transform: uppercase;
+	font-weight: 600;
+	align-items: center;
+	box-shadow: 0 2px 2px #FE6244;
+	transition: .5s;
+    cursor: pointer;
+}
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+	border-color: #FE6244;
+	outline: none;
+}
